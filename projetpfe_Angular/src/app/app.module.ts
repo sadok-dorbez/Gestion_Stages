@@ -10,11 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import {AdminModule} from "./modules/admin/admin.module";
 
+
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LoginComponent,
+   
   ],
   imports: [
     BrowserModule,

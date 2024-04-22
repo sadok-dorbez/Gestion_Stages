@@ -11,6 +11,7 @@ import {CalendarComponent} from "./components/calendar/calendar.component";
 import {QuestionListComponent} from "./components/question-list/question-list.component";
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { NavBarComponent } from './../../modules/shared/nav-bar/nav-bar.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
     UploadCvComponent,
     SujetDetailsComponent,
     CalendarComponent,
-    QuestionListComponent
+    QuestionListComponent,
+    NavBarComponent
   ],
   imports: [
     CommonModule,
