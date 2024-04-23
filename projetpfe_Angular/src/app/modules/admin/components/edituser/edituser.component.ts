@@ -32,24 +32,31 @@ export class EdituserComponent implements OnInit {
         this.user = user;
       });
     }
-
+    this.userService.getRoles().subscribe(roles => {
+      this.roles = roles;
+      console.log("Roles fetched successfully!")
+    });
   }
 
   getUser(id: number): void {
     this.userService.getUser(id).subscribe(user => {
       this.user = user;
+      console.log("User fetched successfully!")
     });
   }
-
 
 
   updateUser(): void {
     this.userService.updateUser(this.userId, this.user).subscribe(
       response => {
+        console.log("User updated successfully!")
       },
       error => {
+        console.log("User updated successfully!")
       }
     );
-    this.router.navigate(['/admin']);
+    this.router.navigate(['/admin/users']);
   }
+
+
 }

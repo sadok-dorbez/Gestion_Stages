@@ -12,12 +12,14 @@ import {ChecksRadiosComponent} from "./components/lists-tests/checks-radios.comp
 import {QuestionComponent} from "./components/question/question.component";
 import { CalendarsComponent } from './components/calendar/calendars.component';
 import { AddTestComponent } from './components/add-test/add-test.component';
+import {AddUserComponent} from "./components/add-user/add-user.component";
 
 
 const routes: Routes = [
   { path: "dashboard", component: AdminDashboardComponent},
   { path: "users", component: ListUsersComponent},
-  { path: "edituser", component: EdituserComponent},
+  { path: "adduser", component: AddUserComponent},
+  { path: "edituser/:id", component: EdituserComponent},
   { path: "sujets", component: ListSujetsComponent},
   { path: "candidatures", component: ListCandidaturesComponent},
   { path: "addsujet", component: AddSujetComponent},

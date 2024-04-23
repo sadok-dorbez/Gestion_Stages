@@ -46,4 +46,9 @@ export class UserService {
     return this.http.get(API_URL + 'role/getRoles');
   }
 
+  saveImage(file: File, idUser: any): Observable<any> {
+    const formData = new FormData();
+    formData.append('file', file);
+    return this.http.post<any>(API_URL + "user/saveImage/" + idUser, formData);
+  }
 }

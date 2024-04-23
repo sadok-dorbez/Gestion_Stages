@@ -55,7 +55,7 @@ export class ListUsersComponent implements OnInit{
   }
 
   editUser(id: any) {
-    this.router.navigate(['/edit/'+ id]);
+    this.router.navigate(['/edituser/'+ id]);
   }
 
   deleteUser(id: any): void {

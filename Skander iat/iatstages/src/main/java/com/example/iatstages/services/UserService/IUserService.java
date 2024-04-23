@@ -1,6 +1,9 @@
 package com.example.iatstages.services.UserService;
 
 import com.example.iatstages.entities.User;
+import org.springframework.core.io.Resource;
+import org.springframework.web.multipart.MultipartFile;
+
 import java.util.List;
 
 public interface IUserService {
@@ -13,4 +16,8 @@ public interface IUserService {
     String deleteUser(Long id);
 
     String activate(Long id);
+
+    void saveImage(MultipartFile file, long idUser);
+
+    Resource loadImage(String fileName);
 }

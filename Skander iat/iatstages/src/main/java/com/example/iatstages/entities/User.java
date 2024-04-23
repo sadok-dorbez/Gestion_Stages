@@ -55,7 +55,9 @@ public class User {
 	private String numtele;
 
 	private String country;
-	@JsonIgnore
+
+	private String imageName;
+
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(	name = "user_roles", 
 				joinColumns = @JoinColumn(name = "user_id"), 

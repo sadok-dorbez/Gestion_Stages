@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.loginForm.value).subscribe(
       (res: any) => {
         if (res) {
+          console.log("Logged succussfully!")
           this.storageService.saveUser(res);
 
           if (this.storageService.isAdminLoggedIn()) {
@@ -44,6 +45,7 @@ export class LoginComponent implements OnInit {
         }
       },
       error => {
+        console.log("Error in logging in!")
         this.message = error.message;
       }
     );

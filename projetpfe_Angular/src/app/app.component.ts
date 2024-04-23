@@ -12,6 +12,6 @@ export class AppComponent {
   constructor(private storageService: StorageService) {
   }
   logout(){
-    return this.storageService.clearStorage();
+    return this.storageService.clean();
   }
 }

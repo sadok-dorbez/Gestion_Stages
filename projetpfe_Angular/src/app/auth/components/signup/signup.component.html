@@ -1,23 +1,22 @@
 <div *ngIf="message" class="message-container" [ngClass]="{'success-message': message.includes('réussie'), 'error-message': message.includes('Erreur')}">
     {{ message }}
   </div>
-  
+
 
 
 <div cLass="wrapper">
     <form action="" class="form" [formGroup]="signupForm" >
         <h1 class="title">Sign up</h1>
         <div cLass="inp">
-            <input type="text" name="" id="" class="input" placeholder="Username" formControlName="username">
+            <input style="color:white" type="text" name="" id="username" class="input" placeholder="Username" formControlName="username">
             <i class="Ta-solid Ta-user"></i>
         </div>
         <div cLass="inp">
-            <input type="text" name="" id="" class="input" placeholder="Email" formControlName="email">
+            <input style="color:white" type="text" name="" id="email" class="input" placeholder="Email" formControlName="email">
             <i class="Ta-solid Ta-user"></i>
         </div>
         <div cLass="inp">
-
-            <input type="text" name="" id="" class="input" placeholder="Password" formControlName="password">
+            <input style="color:white" type="password" name="" id="password" class="input" placeholder="Password" formControlName="password">
             <i class="Ta-solid Ta-user"></i>
         </div>
 

@@ -19,8 +19,12 @@ export class StorageService {
     return user ? JSON.parse(user) : null;
   }
 
-  clearStorage(): void {
+  clean(): void {
     window.localStorage.removeItem(USER_KEY);
+  }
+
+  isLoggedIn(): boolean {
+    return this.getUser();
   }
 
   isAdminLoggedIn(): boolean {

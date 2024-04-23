@@ -18,7 +18,7 @@ import java.util.UUID;
 @Service
 @AllArgsConstructor
 public class FileServiceImpl implements FileService{
-    private final Path root = Paths.get("src/main/resources/uploads");
+    private final Path root = Paths.get("src/main/resources/uploads/cv");
 
     CandidatureRepository candidatureRepository;
 

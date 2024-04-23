@@ -29,6 +29,8 @@ export class SignupComponent {
       (res) => {
         console.log(res);
         this.message = 'Inscription réussie !';
+        this.router.navigate(['login']);
+
       },
       (error) => {
         console.error(error);

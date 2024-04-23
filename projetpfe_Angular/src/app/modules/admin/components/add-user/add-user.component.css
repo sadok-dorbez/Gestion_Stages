@@ -25,7 +25,7 @@
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.btn-edit-user {
+.btn-add-user {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 0.25rem 0.5rem;
@@ -34,7 +34,7 @@
   margin-top: 1rem;
 }
 
-.btn-edit-user:hover {
+.btn-add-user:hover {
   background-color: #218838;
   border-color: #1e7e34;
 }

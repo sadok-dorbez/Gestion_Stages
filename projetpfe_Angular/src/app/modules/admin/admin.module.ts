@@ -17,6 +17,7 @@ import { ChecksRadiosComponent } from './components/lists-tests/checks-radios.co
 import { QuestionComponent } from './components/question/question.component';
 import { CalendarsComponent } from './components/calendar/calendars.component';
 import { AddTestComponent } from './components/add-test/add-test.component';
+import { AddUserComponent } from './components/add-user/add-user.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AddTestComponent } from './components/add-test/add-test.component';
         ChecksRadiosComponent,
         QuestionComponent,
         CalendarsComponent,
-        AddTestComponent
+        AddTestComponent,
+        AddUserComponent
         
 
     ],
